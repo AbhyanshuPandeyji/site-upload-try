@@ -21,7 +21,7 @@ app.use(cookieParser());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(fileUpload());
 app.use(cors({
-    origin: ['http://localhost:3000' , "https://ecommerce-website-before.onrender.com"],
+    origin: ['http://localhost:3000' , "https://theecommercehostingtest1.onrender.com"],
 }));
 
 
