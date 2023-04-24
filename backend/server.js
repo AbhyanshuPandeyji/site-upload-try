@@ -1,7 +1,5 @@
 const app = require("./app");
-const cors = require('cors')
-const fileUpload = require("express-fileupload");
-const path = require("path")
+
 
 
 
@@ -32,17 +30,6 @@ if(process.env.NODE_ENV !== "PRODUCTION"){
     require('dotenv').config({path:"backend/config/config.env"}); 
 
 }
-
-
-
-// to take the whole build
-app.use(express.static(path.join(__dirname, "../frontend/build")));
-
-// to get data by rendering on any url of our website - it will run even if the frontend is closed
-// type local host 4000
-app.get("*" , (req,res)=>{
-    res.sendFile(path.resolve(__dirname, "../frontend/build/index.html"))
-})
 
 
 // this should be done after process .env file 
