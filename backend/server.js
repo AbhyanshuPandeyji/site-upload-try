@@ -2,7 +2,6 @@ const app = require("./app");
 
 
 
-
 const cloudinary = require("cloudinary"); 
 
 // database acquirement 
@@ -30,6 +29,7 @@ if(process.env.NODE_ENV !== "PRODUCTION"){
     require('dotenv').config({path:"backend/config/config.env"}); 
 
 }
+
 
 
 // this should be done after process .env file 

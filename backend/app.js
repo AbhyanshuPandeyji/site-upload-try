@@ -5,6 +5,7 @@ const bodyParser = require("body-parser");
 const dotenv = require("dotenv");
 const cors = require('cors')
 
+
 const fileUpload = require("express-fileupload");
 
 const path = require("path")
@@ -20,9 +21,9 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(fileUpload());
-app.use(cors({
-    origin: ['http://localhost:3000' , "https://theecommercehostingtest1.onrender.com"],
-}));
+// app.use(cors({
+//     origin: ['http://localhost:3000' , "https://ecommsite-9l0t.onrender.com"],
+// }));
 
 
 // Route imports
